@@ -103,3 +103,36 @@ int main() {
   printf("size of long double= %d bytes\n", sizeof(d));
   return 0;
 }
+
+signed and unsigned
+- In C, signed and unsigned are type modifiers. 
+- You can alter the data storage of a data type by using them:
+
+signed - allows for storage of both positive and negative numbers
+unsigned - allows for storage of only positive numbers
+
+For example:
+// valid codes
+unsigned int x = 35;
+int y = -35;  // signed int
+int z = 36;  // signed int
+
+// invalid code: unsigned int cannot hold negative integers
+unsigned int num = -35;
+
+Here, the variables x and num can hold only zero and positive values 
+because we have used the unsigned modifier.
+
+Considering the size of int is 4 bytes, variable y can hold values 
+from -231 to 231-1, whereas variable x can hold values from 0 to 232-1.
+
+Derived Data Types
+- Data types that are derived from fundamental data types are derived types. 
+
+For example: 
+- arrays, pointers, function types, structures, etc.
+
+Derived data types:
+- bool type
+- Enumerated type
+- Complex types
