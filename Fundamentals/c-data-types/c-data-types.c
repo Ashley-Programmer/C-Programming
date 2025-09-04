@@ -12,5 +12,14 @@ int main() {
     printf("Size of long long = %d bytes\n", sizeof(c));
     printf("Size of long double = %d bytes\n", sizeof(d));
 
+    int age;
+    printf("\nSize of int = %d bytes\n", sizeof(age));
+
+    double num;
+    printf("Size of double = %lf bytes\n");
+
+    float num1;
+    printf("Size of float = %f bytes\n");
+
     return 0;
 }
